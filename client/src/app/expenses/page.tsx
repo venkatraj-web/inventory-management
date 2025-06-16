@@ -1,6 +1,9 @@
 'use client';
 
-import { useGetExpensesByCategoryQuery } from '@/state/api';
+import {
+  ExpenseByCategorySummary,
+  useGetExpensesByCategoryQuery,
+} from '@/state/api';
 import { useMemo, useState } from 'react';
 import Header from '@/app/(components)/Header';
 import {
