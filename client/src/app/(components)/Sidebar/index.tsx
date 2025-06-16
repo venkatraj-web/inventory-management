@@ -80,8 +80,8 @@ const Sidebar = () => {
         }`}
       >
         <Image
-          src="https://stratonik-test-bucket.s3.us-east-1.amazonaws.com/beach.jpg"
-          alt="stratonik-logo"
+          src="https://s3-edroh-inventorymanagement.s3.ap-south-1.amazonaws.com/logo.png"
+          alt="edstock-logo"
           width={27}
           height={27}
           className="rounded w-8"

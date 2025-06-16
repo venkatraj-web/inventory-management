@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'stratonik-test-bucket.s3.us-east-1.amazonaws.com',
+        hostname: 's3-edroh-inventorymanagement.s3.ap-south-1.amazonaws.com',
         port: '',
         pathname: '/**',
       },

@@ -10,6 +10,7 @@ import React, { useCallback, useMemo, useState } from 'react';
 import Header from '@/app/(components)/Header';
 import Rating from '@/app/(components)/Rating';
 import CreateProductModal from './CreateProductModal';
+import Image from 'next/image';
 
 type ProductFormData = {
   name: string;
@@ -74,6 +75,15 @@ const Products = () => {
   const ProductListItem = React.memo(({ product }: { product: Product }) => (
     <div className="border shadow max-w-full w-full mx-auto p-4 rounded-md">
       <div className="flex items-center flex-col">
+        <Image
+          src={`https://s3-edroh-inventorymanagement.s3.ap-south-1.amazonaws.com/product${
+            Math.floor(Math.random() * 3) + 1
+          }.png`}
+          alt={product.name}
+          width={150}
+          height={150}
+          className="mb-3 rounded-2xl w-36 h-36"
+        />
         <h3 className="text-lg text-gray-900 font-semibold">{product.name}</h3>
         <p className="text-gray-800">${product.price.toFixed(2)}</p>
         <div className="text-sm text-gray-600 mt-1">
